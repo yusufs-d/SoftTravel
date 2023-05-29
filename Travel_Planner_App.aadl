@@ -1,0 +1,35 @@
+package Travel_Planner_App
+public
+
+system Travel_Planner_System
+end Travel_Planner_System;
+
+system implementation Travel_Planner_System.impl
+subcomponents
+  User_Interface : process User_Interface_Component;
+  Planner : process Planner_Component;
+  Database : data Database_Component;
+end Travel_Planner_System.impl;
+
+process User_Interface_Component
+end User_Interface_Component;
+
+thread User_Interface_Controller
+end User_Interface_Controller;
+
+thread User_Interface_View
+end User_Interface_View;
+
+process Planner_Component
+end Planner_Component;
+
+thread Planner_Controller
+end Planner_Controller;
+
+thread Planner_Service
+end Planner_Service;
+
+data Database_Component
+end Database_Component;
+  
+end Travel_Planner_App;
